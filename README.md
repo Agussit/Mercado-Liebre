@@ -10,7 +10,7 @@ MercadoLiebre es una plataforma de comercio electrónico diseñada para ofrecer 
 - **Login**: En esta sección, los usuarios pueden iniciar sesión en sus cuentas existentes.
 - **Register**: Aquí, los nuevos usuarios pueden registrarse para crear una cuenta en MercadoLiebre y comenzar a realizar compras.
 
-El objetivo principal de este proyecto fue cumplir con los requisitos establecidos por Digital House y desarrollar una aplicación funcional que cubriera las necesidades básicas de un sitio de comercio electrónico.
+El objetivo principal de este proyecto fue cumplir con los requisitos establecidos por Digital House y desarrollar las vistas y diseños que cubriera las necesidades básicas de un sitio de comercio electrónico.
 
 
 ## Agradecimientos
