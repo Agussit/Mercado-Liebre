@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MercadoLiebre</title>
+    <link rel="stylesheet" href="/css/normalize.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head> 
+<body class="body-minimalista">
+    <header class="header-minimalista">
+        <img class="MercadoLiebre-minimalista" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre"/>        
+        <h3 class="subtitulo-minimalista" ><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas y sin tarjeta de crédito</h3>
+    </header>
+    <main class="main-minimalista">
+              <!-- FORMULARIO -->
+            <form action="/" method="post" class="create-form">
+                <div class="control-formulario">
+                    <label><b>Nombre y apellido:</b></label>
+                    <input type="text" name="nombre-apellido" placeholder="Pepito Alcachofa" class="control">
+                </div>
+                <div class="control-formulario">
+                    <label><b> Nombre de usuario: </b></label>
+                    <input type="text" name="usuario" placeholder="PepitoAlcacho" pattern=".{5,}" title="El nombre debe tener al menos cinco caracteres" class="control">
+                </div>
+                <div class="control-formulario">
+                    <label><b> Email: </b></label>
+                    <input type="email" name="email" placeholder="pepito@hotmail.com"  class="control">
+                </div>
+                <div class="control-formulario">
+                    <label><b> Fecha de nacimiento </b></label>
+                <input type="date" id="fecha" name="fecha" value="fecha">
+                </div>
+                <div class="control-formulario">
+                    <label><b> Domicilio: </b></label>
+                    <input type="text" name="domicilio" class="control">
+                </div>
+
+                <div class="control-formulario">
+                    <div class="perfil-usuario">
+                    <label><b> Perfil de usuario: </b></label>
+
+                    <label for="checkboxComprar">Comprar</label><br>
+                    <input type="checkbox" id="checkboxComprar" name="accion" value="Comprar">
+                    
+                    <label for="checkboxVender">Vender</label><br>
+                    <input type="checkbox" id="checkboxVender" name="accion" value="Vender">
+                    </div>
+                </div>
+                <div class="control-formulario">
+                    <label><b>Categoría: </b></label>
+                    <div class="checkboxes">
+                      <div class="columna">
+                         <div class="una-categoria">
+                            <label for="checkboxElectro">Electro</label><br>
+                            <input type="checkbox" id="checkboxElectro" name="categoria" value="electro">
+                        </div>
+                      
+                        <div class="una-categoria"> 
+                            <label for="checkboxModa">Moda</label><br>
+                            <input type="checkbox" id="checkboxModa" name="categoria" value="moda">
+                        </div>    
+                        <div class="una-categoria">
+                            <label for="checkboxHogar">Hogar</label><br>
+                            <input type="checkbox" id="checkboxHogar" name="categoria" value="hogar">
+                        </div>
+                     </div>
+                     <div class="columna">
+                        <div class="una-categoria">
+                            <label for="checkboxJugueteria">Juguetería</label><br>
+                            <input type="checkbox" id="checkboxJugueteria" name="categoria" value="jugueteria">
+                        </div>
+                        <div class="una-categoria">
+                            <label for="checkboxVidaSana">Vida Sana</label><br>
+                            <input type="checkbox" id="checkboxVidaSana" name="categoria" value="vida Sana">
+                        </div>
+                        <div class="una-categoria">
+                            <label for="checkboxDeportes">Deportes</label><br>
+                            <input type="checkbox" id="checkboxDeportes" name="categoria" value="deportes">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="control-formulario">
+                    <label><b> Foto de usuario </b></label>
+                    <input type="file" id="foto" name="foto" accept="image/jpeg, image/png">
+                    <span class="mensaje-aclaracion">Por favor, seleccione una imagen en formato JPEG o PNG.</span>
+                </div>
+                <div class="control-formulario">
+                    <label><b> Contraseña: </b></label>
+                    <input type="password" name="contraseña" value="contraseña" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*()_+=\-[\]{};:'\,.?])[A-Za-z\d!@#$%^&*()_+=\-[\]{};:'\,.?]{8,}$" title="Debe contener al menos 1 letra, 1 número, 1 símbolo y tener al menos 8 caracteres" required>
+
+                </div>
+                <div class="control-formulario">
+                    <label><b> Confirmar contraseña: </b></label>
+                    <input type="password" name="confirmaContraseña" value="confirmaContraseña">
+
+                </div>
+
+                <button type="submit" class="boton-formulario">Enviar</button>
+                <button type="reset" class="boton-formulario">Borrar</button>
+
+            </form> 
+ 
+
+    </main>
+    
+    <footer>
+        <section class="footer">
+           <div class="sin-copy">
+            <section>
+             <i class="fa-solid fa-credit-card"></i>
+               <h3>Pagá con tarjeta o en efectivo</h3>
+               <h4>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                   puntos de pago. ¡Y siempre es seguro!</h4>
+            </section>
+            <section>
+             <i class="fa-solid fa-gift"></i>
+               <h3>Envío gratis desde $ 2.500</h3>
+               <h4>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                   productos. Es un beneficio de Mercado Puntos.</h4>
+            </section>
+            <section>
+             <i class="fa-solid fa-user-shield"></i>
+               <h3>Seguridad, de principio a fin</h3>
+               <h4>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                   porque estás siempre protegid@.</h4>
+            </section>
+           </div>
+            <section>
+               <h3>Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>                    
+            </section>
+         
+         </section>
+    </footer>
+</body>
+</html>

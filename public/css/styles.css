@@ -1,0 +1,672 @@
+*{   
+    font-family: Roboto;
+    font-size: 16px;
+    align-self: center;
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;
+}
+body{
+ padding:0;
+ position: relative;
+
+}
+header{
+    position: fixed;
+    width: 100%;   
+    margin-bottom: 0px; 
+    background-color: #EAC926;
+    padding-bottom: 5px;
+    z-index: 4;
+    top: 0;
+}    
+.MercadoLiebre{
+    width: 50%;    
+    margin-bottom: 10px;
+}
+.banner img{
+
+    padding: 0;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+
+}
+.banner{
+    position: fixed;
+    padding: 0;
+    margin-top: 0;
+    width: 100%;
+    z-index: 4;
+
+}
+.subtitulo{   
+    left: 50%;
+    top:-25px;
+    text-align: center;
+    font-weight: 350;
+}
+.subtitulo i {
+    margin-right: 5px;
+}
+
+/* PRODUCTOS */
+
+.img_producto{
+    width: 100%;
+    margin-bottom: 10px;
+    box-align: center;
+    border-bottom: 1px solid #ebebeb;
+    max-height: 250px;
+}
+.titulares{
+    font-size: 24px;
+    padding: 10px;  
+
+}
+.precio{
+    font-size: 18px; 
+    font-weight: 400;
+    background-color: white;
+    margin-left: 10px;   
+    width: 30%;
+}
+.descuento, .descripcion{
+    
+    background-color: white;
+    margin-left: 5px;
+    font-weight: 350;
+}
+.descuento{
+    color: #39b54a;
+    padding-left: 5px;
+    width: 70%;
+}
+.precio-descuento{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;  
+ 
+}
+.all_products{
+    display: flex; 
+    margin-bottom: 5%;
+    margin-top: 1%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.un_producto{
+    background-color: white;
+    max-width: 300px;
+    max-height: 450px;    
+    padding: 20px 10px 10px 10px;
+    margin-top: 2%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 8px solid #ebebeb;
+    transition: box-shadow 0.8s ease-in-out;
+
+}
+.precio-descuento,
+.descripcion {
+    /* visibility: hidden; */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.un_producto:hover .precio-descuento,
+.un_producto:hover .descripcion {
+    /* visibility: visible; */
+    opacity: 1;
+
+}
+.un_producto:hover{
+    box-shadow : 0px 0px 65px rgb( 100 , 100 , 100 );
+
+}
+
+/* LISTAS */
+.conteiner_listas{
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 1%;  
+}
+.listas-site{
+    display: flex;
+    flex-direction: row;
+}
+.listas-nav{
+    display: flex;
+    flex-direction: row;
+}
+.conteiner_listas ul{
+     list-style: none;
+     padding: 0 5px;        
+}
+.conteiner_listas ul li{
+margin-right: 35px;      
+}
+
+
+/* BARRA DE BUSQUEDA*/
+
+.input_busqueda{
+  
+     width: 90%;
+     border-radius: 3px solid white;
+
+}
+.barra_icono{
+    display: flex;
+    margin-left: 2%;  
+    padding: 0px; 
+    width: 35%;
+    
+}
+
+/*BARRA MENU BURGER*/
+.fa-bars{
+    display: block;
+    font-size: 100%;
+    background-color: #03264C;
+    color: white;  
+    width: 35px;
+    text-align: center;
+    height: 35px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.burger-menu{
+    display: block;
+    margin-top: 5%;
+    /* margin-left: 48vw;     */
+    box-sizing: border-box;
+    margin-bottom: 0px;
+}
+
+/* MAIN */
+
+main{    
+    width: 90%;
+    background-color: #ebebeb;
+}
+
+/*ICONO TRUCK*/
+
+.circle-icon {
+
+    position: relative;
+    /* width: 20px; /* Tamaño del círculo */
+    /* height: 20px; /* Tamaño del círculo */
+    /* margin: 10px;*/
+    margin-right: 5%;
+    
+}
+.fa-solid.fa-truck {
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    left: 80%;
+    top: -30px;
+    transition: transform 0.5s ease;
+    
+}
+.un_producto:hover .fa-solid.fa-truck {
+    transform: rotate(-90deg);
+}
+
+/* FOOTER */
+
+.sin-copy h4{
+     font-weight: 300;
+}
+.footer i{
+    color: #1259c3;
+    width: 2em;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+.footer i:hover{
+    color: #59ff18;
+}
+footer{
+   
+    text-align: center;
+
+}
+.footer section{
+    
+    margin-top: 10px;
+    margin-bottom: 5%;
+
+}
+
+/* FORMULARIOS */
+
+.create-form{
+     padding: 20px 15px;
+}
+.control-formulario{
+    margin-bottom: 15px;
+    width: 100%;
+
+}
+.control-formulario label{
+      margin-bottom: 15px;
+      font-style: italic;
+      display: block;
+}
+.control{
+    width: 100%;
+    padding: 8px;
+}
+.boton-formulario{
+    background-color: #1259c3;
+    border: none;
+    font-size: 20px;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+}
+.mensaje-aclaracion {
+    display: block; 
+    margin-top: 5px; 
+    font-size: 14px; 
+    color: #888; 
+}
+input[type="file"] {
+
+    color: transparent;
+}
+.ocultar-producto{
+    display: none;
+}
+.estilo-form{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #1259c3;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: #ebebeb;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* MEDIAS */
+
+
+@media (max-width:360px){
+/* MOBILE */
+    .body-minimalista{
+        min-width: 314px;
+    }
+    .header-minimalista {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center; 
+        width: 100%;
+        height: 25vh;
+    }
+    .MercadoLiebre-minimalista{
+        margin: 8%  15% 0 15%;
+    }
+    .subtitulo-minimalista{
+        width: 100%;
+        margin-top: 5%;
+    }
+    .MercadoLiebre{
+
+         margin-top: 10px;
+
+    }
+    .descripcion{
+        display: none;    
+    }      
+    .barra_icono{
+        display: flex;
+        padding: 20px;
+        background-color: white;
+        width: 38vw;
+        border-radius: 5px;  
+        margin-bottom: 1px;
+        margin-top: 10px;    
+        padding: 3px; 
+        margin-left: 0; 
+        position: absolute;
+        left:60%;
+        top:0;
+    }    
+    .fa-magnifying-glass{
+        align-items: center;   
+        background-color: white;
+        margin-left: 10px;
+        margin-top: 1px;
+      
+    }    
+    .listas-site, .listas-nav{
+    
+        display: none;
+    
+    }   
+    .precio, .descuento{
+        font-size: 10px;
+    }   
+    .all_products{
+        display: flex;     
+    
+    }
+    .un_producto{
+        width: 100%;
+    }
+    header{ 
+        height: 20vh;
+    }
+    .banner{ 
+        top: 20vh;   
+    }
+    .burger-menu{
+        position: absolute;
+        top: 10vh;
+        left: 45%;
+    }
+    main{   
+        width: 90%;
+        margin:28vh 0 0 5%;
+    }
+    .body-minimalista{
+        width: 120%;
+    }
+    .control-formulario{
+        width: 100%;
+    }
+    .checkboxes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    .checkboxes input{
+        margin-right: 12px; 
+    }
+    .checkboxes label{
+        text-align: center;
+        margin-right: 5px; 
+    }
+    .una-categoria{
+       display: flex;
+       align-items: center;
+
+    }
+    .perfil-usuario{
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+    }
+    .perfil-usuario input
+    {
+        margin-right: 5%; 
+    }
+    .perfil-usuario label{
+        margin-right: 5px; 
+    }
+    .estilo-form{
+        width: 100%;
+    }
+    
+}
+@media (min-width:361px){
+/* TABLETS */
+.body-minimalista{
+    width: 90%;
+}
+.header-minimalista {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    height: 25vh;
+    width: 100%;
+}
+.main-minimalista{
+    margin:25vh 0 0 5%;
+    width: 100%;
+}
+.MercadoLiebre-minimalista{
+    margin-top: 5%;
+     max-width: 50%;
+     max-height: 25%;
+}
+.subtitulo-minimalista{
+    margin-top: 5%;
+    width: 100%;
+    font-size: 16px;
+}
+.MercadoLiebre{
+    margin-left: 2%;
+    width: 30%;
+}
+.contenedor-horizontal{
+    display: flex;  
+    align-items: center;      
+}
+.input_busqueda{
+    width: 80%;
+}
+h4.precio{
+    font-size: 15px;
+    margin-right: 5px;
+}
+.un_producto{
+    
+    width: 50%;
+    box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+}  
+.fa-magnifying-glass{
+        padding: 3px;
+        align-items: center;   
+        background-color: white;
+        margin-left: 10px;
+        margin-top: 1px;
+        border: 1px solid black;
+       
+}
+.subtitulo{   
+        text-align: center;
+        font-weight: 350;
+}
+.burger-menu{
+        position: absolute;
+        top: 10vh;
+        left: 45%;
+}
+header{ 
+    height: 25vh;
+}
+.banner{
+    top: 25vh;
+    height: 150px;
+}
+.burger-menu{
+    position: absolute;
+    top: 15vh;
+    left: 45%;
+}
+main{   
+    margin:45vh 0 0 5%;
+}
+.control-formulario{
+    width: 50vw;
+}
+.checkboxes {
+    display: flex;
+    align-items: center;
+    flex-direction: row;    
+    width: 50%;
+    margin: 0%;
+ 
+}
+.columna{
+    display: flex;
+    align-items: center;
+    flex-direction: column;  
+    width: 100%;  
+}
+.una-categoria
+ {
+    margin-right: 10%; 
+}
+.checkboxes label{
+    margin-right: 15px; 
+}
+.una-categoria{
+    display: flex;
+    width: 192px;
+    align-items: center;
+    margin-left: 55%;
+ }
+.perfil-usuario{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+.perfil-usuario input
+ {
+    margin-right: 50px; 
+}
+.perfil-usuario label{
+    margin-right: 5px; 
+}
+.create-form{
+    width: 100%;
+}
+.main-login{
+    margin: 35vh 0 5vh 4vh;
+
+}
+.boton-login{
+    transition: background-color 0.8s ease, box-shadow 0.3s ease-in-out;
+}
+.boton-login:hover{
+
+    background-color: #0022AA;
+    box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 )
+}
+}
+@media (max-width:768px){
+
+    .listas-site li,
+    .listas-nav li {
+        font-size: 14px; 
+    }
+    .conteiner_listas ul li{
+        margin-right: 10px;      
+    }
+}
+@media (min-width:769px){
+/* DESKTOP */
+
+header{ 
+    height: 25vh;
+}
+.banner{
+    top: 25vh;
+    height: 160px;
+}
+main{   
+    margin:45vh 0 0 5%;
+}
+.main-minimalista{   
+    width: 90%;
+    margin:25vh 0 0 10%;
+}
+.control-formulario{
+    width: 50vw;
+}
+.un_producto{
+box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+width: 20%;
+
+}  
+h4.precio{
+    margin-right: 5px;
+}
+.burger-menu{
+    display: none;
+}
+.fa-magnifying-glass{
+    padding: 3px;
+    align-items: center;   
+    background-color: white;
+    margin-left: 10px;
+    margin-top: 1px;
+    border: 1px solid black;
+   
+}
+.input_busqueda{
+    width: 80%;
+    margin: 0;
+}
+.MercadoLiebre-minimalista{
+    margin-top: 5%;
+     max-width: 50%;
+     max-height: 25%;
+}
+.subtitulo-minimalista{
+    margin-top: 2%;
+    width: 100%;
+    font-size: 16px;
+}
+.checkboxes {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    width: 100%;
+}
+.checkboxes input
+ {
+    margin-right: 50px; 
+}
+.checkboxes label{
+    margin-right: 5px; 
+}
+.perfil-usuario{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+.perfil-usuario input
+ {
+    margin-right: 50px; 
+}
+.perfil-usuario label{
+    margin-right: 5px; 
+}
+.una-categoria{
+
+    width: 192px;
+
+}
+.estilo-form{
+    margin-left: 10%;
+    width: 80%;
+}
+.main-login{
+    margin: 35vh 0 5vh 10vh;
+
+}
+.footer .sin-copy{
+    display: flex;
+    align-items: center;
+}
+}
+
+
