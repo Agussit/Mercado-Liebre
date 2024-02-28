@@ -63,6 +63,7 @@ header{
 .titulares{
     font-size: 24px;
     padding: 10px;  
+    margin-top: 10px;
 
 }
 .precio{
@@ -151,6 +152,7 @@ margin-right: 35px;
 .input_busqueda{
   
      width: 90%;
+     height: 25px;
      border-radius: 3px solid white;
 
 }
@@ -296,7 +298,7 @@ input[type="file"] {
 /* MEDIAS */
 
 
-@media (max-width:360px){
+@media (max-width:640px){
 /* MOBILE */
     .body-minimalista{
         min-width: 314px;
@@ -355,7 +357,7 @@ input[type="file"] {
     }   
     .all_products{
         display: flex;     
-    
+        margin-top: 10vh;
     }
     .un_producto{
         width: 100%;
@@ -368,12 +370,12 @@ input[type="file"] {
     }
     .burger-menu{
         position: absolute;
-        top: 10vh;
+        top: 12vh;
         left: 45%;
     }
     main{   
         width: 90%;
-        margin:28vh 0 0 5%;
+        margin:35vh 0 0 5%;
     }
     .body-minimalista{
         width: 120%;
@@ -417,7 +419,7 @@ input[type="file"] {
     }
     
 }
-@media (min-width:361px){
+@media (min-width:641px){
 /* TABLETS */
 .body-minimalista{
     width: 90%;
@@ -487,7 +489,7 @@ header{
 }
 .banner{
     top: 25vh;
-    height: 150px;
+    height: 140px;
 }
 .burger-menu{
     position: absolute;
@@ -565,7 +567,7 @@ main{
         margin-right: 10px;      
     }
 }
-@media (min-width:769px){
+@media (min-width:1000px){
 /* DESKTOP */
 
 header{ 
@@ -573,7 +575,7 @@ header{
 }
 .banner{
     top: 25vh;
-    height: 160px;
+    height: 20%;
 }
 main{   
     margin:45vh 0 0 5%;
