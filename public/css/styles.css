@@ -110,13 +110,11 @@ header{
 }
 .precio-descuento,
 .descripcion {
-    /* visibility: hidden; */
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 .un_producto:hover .precio-descuento,
 .un_producto:hover .descripcion {
-    /* visibility: visible; */
     opacity: 1;
 
 }
@@ -179,7 +177,6 @@ margin-right: 35px;
 .burger-menu{
     display: block;
     margin-top: 5%;
-    /* margin-left: 48vw;     */
     box-sizing: border-box;
     margin-bottom: 0px;
 }
@@ -196,9 +193,6 @@ main{
 .circle-icon {
 
     position: relative;
-    /* width: 20px; /* Tamaño del círculo */
-    /* height: 20px; /* Tamaño del círculo */
-    /* margin: 10px;*/
     margin-right: 5%;
     
 }
@@ -243,8 +237,8 @@ footer{
 }
 .footer section{
     
-    margin-top: 10px;
-    margin-bottom: 5%;
+    margin: 15px;
+    
 
 }
 
